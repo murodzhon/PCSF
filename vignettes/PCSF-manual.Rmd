@@ -172,6 +172,7 @@ The `enrichment_analysis()` fuction requires the following arguments: `subnet` -
 It is required to define a `gene_universe` to use topGO, and the gene_universe in this example is all the genes in the PPI template network. It performs enrichment analysis for `Biological_Process` terms in Gene Ontology database within our implementation. 
 
 ```{r, results='hide', message=FALSE, warning=FALSE, eval=FALSE}
+library(topGO)
 gene_universe <- V(ppi)$name
 res <- enrichment_analysis(subnet, mode=1, gene_universe)
 ```
