@@ -49,6 +49,7 @@
 #' res <- enrichment_analysis(subnet)
 #' res <- enrichment_analysis(subnet, mode=0)}
 #' \dontrun{
+#' library(topGO)
 #' gene_universe <- V(ppi)$name
 #' res <- enrichment_analysis(subnet, mode=1, gene_universe)}
 #' \dontrun{
